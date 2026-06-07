@@ -1,0 +1,624 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Multipledatausingjson.spec.ts >> MultipleData Using Json >> Add Emp with multiple data rathid
+- Location: tests\Multipledatausingjson.spec.ts:17:8
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+Expected: Promise {}
+Received: serializes to the same string
+```
+
+```
+Error: ENOENT: no such file or directory, stat 'E:\POM-FrameWorkHRM\Pages\134170270044824419.jpg'
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "OrangeHRM" [ref=e4] [cursor=pointer]:
+        - /url: http://www.orangehrm.com/
+        - img "OrangeHRM" [ref=e5]
+      - link "Welcome Md" [ref=e6] [cursor=pointer]:
+        - /url: "#"
+      - img [ref=e9]
+      - link [ref=e11] [cursor=pointer]:
+        - /url: /symfony/web/index.php/help/help?label=pim_viewPersonalDetails
+        - img [ref=e13]
+      - button "Marketplace" [ref=e16]
+      - generic:
+        - generic:
+          - generic "1"
+    - list [ref=e18]:
+      - listitem [ref=e19]:
+        - link "Admin" [ref=e20] [cursor=pointer]:
+          - /url: /symfony/web/index.php/admin/viewAdminModule
+          - generic [ref=e21]: Admin
+        - list [ref=e22]:
+          - listitem [ref=e23]:
+            - link "User Management" [ref=e24] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e25]:
+              - listitem [ref=e26]:
+                - link "Users" [ref=e27] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewSystemUsers
+          - listitem [ref=e28]:
+            - link "Job" [ref=e29] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e30]:
+              - listitem [ref=e31]:
+                - link "Job Titles" [ref=e32] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewJobTitleList
+              - listitem [ref=e33]:
+                - link "Pay Grades" [ref=e34] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewPayGrades
+              - listitem [ref=e35]:
+                - link "Employment Status" [ref=e36] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/employmentStatus
+              - listitem [ref=e37]:
+                - link "Job Categories" [ref=e38] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/jobCategory
+              - listitem [ref=e39]:
+                - link "Work Shifts" [ref=e40] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/workShift
+          - listitem [ref=e41]:
+            - link "Organization" [ref=e42] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e43]:
+              - listitem [ref=e44]:
+                - link "General Information" [ref=e45] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewOrganizationGeneralInformation
+              - listitem [ref=e46]:
+                - link "Locations" [ref=e47] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewLocations
+              - listitem [ref=e48]:
+                - link "Structure" [ref=e49] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewCompanyStructure
+          - listitem [ref=e50]:
+            - link "Qualifications" [ref=e51] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e52]:
+              - listitem [ref=e53]:
+                - link "Skills" [ref=e54] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewSkills
+              - listitem [ref=e55]:
+                - link "Education" [ref=e56] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewEducation
+              - listitem [ref=e57]:
+                - link "Licenses" [ref=e58] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewLicenses
+              - listitem [ref=e59]:
+                - link "Languages" [ref=e60] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewLanguages
+              - listitem [ref=e61]:
+                - link "Memberships" [ref=e62] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/membership
+          - listitem [ref=e63]:
+            - link "Nationalities" [ref=e64] [cursor=pointer]:
+              - /url: /symfony/web/index.php/admin/nationality
+          - listitem [ref=e65]:
+            - link "Corporate Branding" [ref=e66] [cursor=pointer]:
+              - /url: /symfony/web/index.php/admin/addTheme
+          - listitem [ref=e67]:
+            - link "Configuration" [ref=e68] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e69]:
+              - listitem [ref=e70]:
+                - link "Email Configuration" [ref=e71] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/listMailConfiguration
+              - listitem [ref=e72]:
+                - link "Email Subscriptions" [ref=e73] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewEmailNotification
+              - listitem [ref=e74]:
+                - link "Localization" [ref=e75] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/localization
+              - listitem [ref=e76]:
+                - link "Language Packages" [ref=e77] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/languagePackage
+              - listitem [ref=e78]:
+                - link "Modules" [ref=e79] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewModules
+              - listitem [ref=e80]:
+                - link "Social Media Authentication" [ref=e81] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/openIdProvider
+              - listitem [ref=e82]:
+                - link "Register OAuth Client" [ref=e83] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/registerOAuthClient
+      - listitem [ref=e84]:
+        - link "PIM" [ref=e85] [cursor=pointer]:
+          - /url: /symfony/web/index.php/pim/viewPimModule
+          - generic [ref=e86]: PIM
+        - list [ref=e87]:
+          - listitem [ref=e88]:
+            - link "Configuration" [ref=e89] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e90]:
+              - listitem [ref=e91]:
+                - link "Optional Fields" [ref=e92] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/pim/configurePim
+              - listitem [ref=e93]:
+                - link "Custom Fields" [ref=e94] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/pim/listCustomFields
+              - listitem [ref=e95]:
+                - link "Data Import" [ref=e96] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/pimCsvImport
+              - listitem [ref=e97]:
+                - link "Reporting Methods" [ref=e98] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/pim/viewReportingMethods
+              - listitem [ref=e99]:
+                - link "Termination Reasons" [ref=e100] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/pim/viewTerminationReasons
+          - listitem [ref=e101]:
+            - link "Employee List" [ref=e102] [cursor=pointer]:
+              - /url: /symfony/web/index.php/pim/viewEmployeeList/reset/1
+          - listitem [ref=e103]:
+            - link "Add Employee" [ref=e104] [cursor=pointer]:
+              - /url: /symfony/web/index.php/pim/addEmployee
+          - listitem [ref=e105]:
+            - link "Reports" [ref=e106] [cursor=pointer]:
+              - /url: /symfony/web/index.php/core/viewDefinedPredefinedReports/reportGroup/3/reportType/PIM_DEFINED
+      - listitem [ref=e107]:
+        - link "Leave" [ref=e108] [cursor=pointer]:
+          - /url: /symfony/web/index.php/leave/viewLeaveModule
+          - generic [ref=e109]: Leave
+        - list [ref=e110]:
+          - listitem
+      - listitem [ref=e111]:
+        - link "Time" [ref=e112] [cursor=pointer]:
+          - /url: /symfony/web/index.php/time/viewTimeModule
+          - generic [ref=e113]: Time
+        - list [ref=e114]:
+          - listitem [ref=e115]:
+            - link "Timesheets" [ref=e116] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e117]:
+              - listitem [ref=e118]:
+                - link "My Timesheets" [ref=e119] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/time/viewMyTimesheet
+              - listitem [ref=e120]:
+                - link "Employee Timesheets" [ref=e121] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/time/viewEmployeeTimesheet
+          - listitem [ref=e122]:
+            - link "Attendance" [ref=e123] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e124]:
+              - listitem [ref=e125]:
+                - link "My Records" [ref=e126] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/attendance/viewMyAttendanceRecord
+              - listitem [ref=e127]:
+                - link "Punch In/Out" [ref=e128] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/attendance/punchIn
+              - listitem [ref=e129]:
+                - link "Employee Records" [ref=e130] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/attendance/viewAttendanceRecord
+              - listitem [ref=e131]:
+                - link "Configuration" [ref=e132] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/attendance/configure
+          - listitem [ref=e133]:
+            - link "Reports" [ref=e134] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e135]:
+              - listitem [ref=e136]:
+                - link "Project Reports" [ref=e137] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/time/displayProjectReportCriteria?reportId=1
+              - listitem [ref=e138]:
+                - link "Employee Reports" [ref=e139] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/time/displayEmployeeReportCriteria?reportId=2
+              - listitem [ref=e140]:
+                - link "Attendance Summary" [ref=e141] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/time/displayAttendanceSummaryReportCriteria?reportId=4
+          - listitem [ref=e142]:
+            - link "Project Info" [ref=e143] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e144]:
+              - listitem [ref=e145]:
+                - link "Customers" [ref=e146] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewCustomers
+              - listitem [ref=e147]:
+                - link "Projects" [ref=e148] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewProjects
+      - listitem [ref=e149]:
+        - link "Recruitment" [ref=e150] [cursor=pointer]:
+          - /url: /symfony/web/index.php/recruitment/viewRecruitmentModule
+          - generic [ref=e151]: Recruitment
+        - list [ref=e152]:
+          - listitem [ref=e153]:
+            - link "Candidates" [ref=e154] [cursor=pointer]:
+              - /url: /symfony/web/index.php/recruitment/viewCandidates
+          - listitem [ref=e155]:
+            - link "Vacancies" [ref=e156] [cursor=pointer]:
+              - /url: /symfony/web/index.php/recruitment/viewJobVacancy
+      - listitem [ref=e157]:
+        - link "My Info" [ref=e158] [cursor=pointer]:
+          - /url: /symfony/web/index.php/pim/viewMyDetails
+          - generic [ref=e159]: My Info
+        - list [ref=e160]:
+          - listitem
+      - listitem [ref=e161]:
+        - link "Performance" [ref=e162] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e163]: Performance
+        - list [ref=e164]:
+          - listitem [ref=e165]:
+            - link "Configure" [ref=e166] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e167]:
+              - listitem [ref=e168]:
+                - link "KPIs" [ref=e169] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/performance/searchKpi
+              - listitem [ref=e170]:
+                - link "Trackers" [ref=e171] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/performance/addPerformanceTracker
+          - listitem [ref=e172]:
+            - link "Manage Reviews" [ref=e173] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e174]:
+              - listitem [ref=e175]:
+                - link "Manage Reviews" [ref=e176] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/performance/searchPerformancReview
+              - listitem [ref=e177]:
+                - link "My Reviews" [ref=e178] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/performance/myPerformanceReview
+              - listitem [ref=e179]:
+                - link "Review List" [ref=e180] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/performance/searchEvaluatePerformancReview
+          - listitem [ref=e181]:
+            - link "My Trackers" [ref=e182] [cursor=pointer]:
+              - /url: /symfony/web/index.php/performance/viewMyPerformanceTrackerList
+          - listitem [ref=e183]:
+            - link "Employee Trackers" [ref=e184] [cursor=pointer]:
+              - /url: /symfony/web/index.php/performance/viewEmployeePerformanceTrackerList
+      - listitem [ref=e185]:
+        - link "Dashboard" [ref=e186] [cursor=pointer]:
+          - /url: /symfony/web/index.php/dashboard
+          - generic [ref=e187]: Dashboard
+        - list [ref=e188]:
+          - listitem
+      - listitem [ref=e189]:
+        - link "Directory" [ref=e190] [cursor=pointer]:
+          - /url: /symfony/web/index.php/directory/viewDirectory/reset/1
+          - generic [ref=e191]: Directory
+        - list [ref=e192]:
+          - listitem
+      - listitem [ref=e193]:
+        - link "Maintenance" [ref=e194] [cursor=pointer]:
+          - /url: /symfony/web/index.php/maintenance/purgeEmployee
+          - generic [ref=e195]: Maintenance
+        - list [ref=e196]:
+          - listitem [ref=e197]:
+            - link "Purge Records" [ref=e198] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e199]:
+              - listitem [ref=e200]:
+                - link "Employee Records" [ref=e201] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/maintenance/purgeEmployee
+              - listitem [ref=e202]:
+                - link "Candidate Records" [ref=e203] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/maintenance/purgeCandidateData
+          - listitem [ref=e204]:
+            - link "Access Records" [ref=e205] [cursor=pointer]:
+              - /url: /symfony/web/index.php/maintenance/accessEmployeeData
+      - listitem [ref=e206]:
+        - link "Buzz" [ref=e207] [cursor=pointer]:
+          - /url: /symfony/web/index.php/buzz/viewBuzz
+          - generic [ref=e208]: Buzz
+        - list [ref=e209]:
+          - listitem
+    - generic [ref=e211]:
+      - generic [ref=e212]:
+        - generic [ref=e213]:
+          - heading "rathid chinna" [level=1] [ref=e214]
+          - link "Employee Photo" [ref=e216] [cursor=pointer]:
+            - /url: /symfony/web/index.php/pim/viewPhotograph/empNumber/820
+            - img "Employee Photo" [ref=e217]
+        - list [ref=e218]:
+          - listitem [ref=e219]:
+            - link "Personal Details" [ref=e220] [cursor=pointer]:
+              - /url: /symfony/web/index.php/pim/viewPersonalDetails/empNumber/820
+          - listitem [ref=e221]:
+            - link "Contact Details" [ref=e222] [cursor=pointer]:
+              - /url: /symfony/web/index.php/pim/contactDetails/empNumber/820
+          - listitem [ref=e223]:
+            - link "Emergency Contacts" [ref=e224] [cursor=pointer]:
+              - /url: /symfony/web/index.php/pim/viewEmergencyContacts/empNumber/820
+          - listitem [ref=e225]:
+            - link "Dependents" [ref=e226] [cursor=pointer]:
+              - /url: /symfony/web/index.php/pim/viewDependents/empNumber/820
+          - listitem [ref=e227]:
+            - link "Immigration" [ref=e228] [cursor=pointer]:
+              - /url: /symfony/web/index.php/pim/viewImmigration/empNumber/820
+          - listitem [ref=e229]:
+            - link "Job" [ref=e230] [cursor=pointer]:
+              - /url: /symfony/web/index.php/pim/viewJobDetails/empNumber/820
+          - listitem [ref=e231]:
+            - link "Salary" [ref=e232] [cursor=pointer]:
+              - /url: /symfony/web/index.php/pim/viewSalaryList/empNumber/820
+          - listitem [ref=e233]:
+            - link "Report-to" [ref=e234] [cursor=pointer]:
+              - /url: /symfony/web/index.php/pim/viewReportToDetails/empNumber/820
+          - listitem [ref=e235]:
+            - link "Qualifications" [ref=e236] [cursor=pointer]:
+              - /url: /symfony/web/index.php/pim/viewQualifications/empNumber/820
+          - listitem [ref=e237]:
+            - link "Memberships" [ref=e238] [cursor=pointer]:
+              - /url: /symfony/web/index.php/pim/viewMemberships/empNumber/820
+      - generic [ref=e239]:
+        - heading "Personal Details" [level=1] [ref=e241]
+        - group [ref=e244]:
+          - list [ref=e245]:
+            - listitem [ref=e246]:
+              - generic [ref=e247]: Full Name
+              - list [ref=e248]:
+                - listitem [ref=e249]:
+                  - generic [ref=e250]:
+                    - emphasis [ref=e251]: "*"
+                    - text: First Name
+                  - textbox "First Name" [disabled] [ref=e252]: rathid
+                - listitem [ref=e253]:
+                  - generic [ref=e254]: Middle Name
+                  - textbox "Middle Name" [disabled] [ref=e255]
+                - listitem [ref=e256]:
+                  - generic [ref=e257]:
+                    - emphasis [ref=e258]: "*"
+                    - text: Last Name
+                  - textbox "Last Name" [disabled] [ref=e259]: chinna
+          - list [ref=e260]:
+            - listitem [ref=e261]:
+              - generic [ref=e262]: Employee Id
+              - textbox "Employee Id" [disabled] [ref=e263]: "0830"
+            - listitem [ref=e264]:
+              - generic [ref=e265]: Other Id
+              - textbox "Other Id" [disabled] [ref=e266]
+            - listitem [ref=e267]:
+              - generic [ref=e268]: Driver's License Number
+              - textbox "Driver's License Number" [disabled] [ref=e269]
+            - listitem [ref=e270]:
+              - generic [ref=e271]: License Expiry Date
+              - textbox "License Expiry Date" [disabled] [ref=e272]: yyyy-mm-dd
+          - list [ref=e273]:
+            - listitem [ref=e274]:
+              - generic [ref=e275]: Gender
+              - list:
+                - listitem [ref=e276]:
+                  - radio "Male" [disabled] [ref=e277]
+                  - generic [ref=e278]: Male
+                - listitem [ref=e279]:
+                  - radio "Female" [disabled] [ref=e280]
+                  - generic [ref=e281]: Female
+            - listitem [ref=e282]:
+              - generic [ref=e283]: Marital Status
+              - combobox "Marital Status" [disabled] [ref=e284]:
+                - option "-- Select --" [selected]
+                - option "Single"
+                - option "Married"
+                - option "Other"
+            - listitem [ref=e285]:
+              - generic [ref=e286]: Nationality
+              - combobox "Nationality" [disabled] [ref=e287]:
+                - option "-- Select --" [selected]
+                - option "Afghan"
+                - option "Albanian"
+                - option "Algerian"
+                - option "American"
+                - option "Andorran"
+                - option "Angolan"
+                - option "Antiguans"
+                - option "Argentinean"
+                - option "Armenian"
+                - option "Australian"
+                - option "Austrian"
+                - option "Azerbaijani"
+                - option "Bahamian"
+                - option "Bahraini"
+                - option "Bangladeshi"
+                - option "Barbadian"
+                - option "Barbudans"
+                - option "Batswana"
+                - option "Belarusian"
+                - option "Belgian"
+                - option "Belizean"
+                - option "Beninese"
+                - option "Bhutanese"
+                - option "Bolivian"
+                - option "Bosnian"
+                - option "Brazilian"
+                - option "British"
+                - option "Bruneian"
+                - option "Bulgarian"
+                - option "Burkinabe"
+                - option "Burmese"
+                - option "Burundian"
+                - option "Cambodian"
+                - option "Cameroonian"
+                - option "Canadian"
+                - option "Cape Verdean"
+                - option "Central African"
+                - option "Chadian"
+                - option "Chilean"
+                - option "Chinese"
+                - option "Colombian"
+                - option "Comoran"
+                - option "Congolese"
+                - option "Costa Rican"
+                - option "Croatian"
+                - option "Cuban"
+                - option "Cypriot"
+                - option "Czech"
+                - option "Danish"
+                - option "Djibouti"
+                - option "Dominican"
+                - option "Dutch"
+                - option "East Timorese"
+                - option "Ecuadorean"
+                - option "Egyptian"
+                - option "Emirian"
+                - option "Equatorial Guinean"
+                - option "Eritrean"
+                - option "Estonian"
+                - option "Ethiopian"
+                - option "Fijian"
+                - option "Filipino"
+                - option "Finnish"
+                - option "French"
+                - option "Gabonese"
+                - option "Gambian"
+                - option "Georgian"
+                - option "German"
+                - option "Ghanaian"
+                - option "Greek"
+                - option "Grenadian"
+                - option "Guatemalan"
+                - option "Guinea-Bissauan"
+                - option "Guinean"
+                - option "Guyanese"
+                - option "Haitian"
+                - option "Herzegovinian"
+                - option "Honduran"
+                - option "Hungarian"
+                - option "I-Kiribati"
+                - option "Icelander"
+                - option "Indian"
+                - option "Indonesian"
+                - option "Iranian"
+                - option "Iraqi"
+                - option "Irish"
+                - option "Israeli"
+                - option "Italian"
+                - option "Ivorian"
+                - option "Jamaican"
+                - option "Japanese"
+                - option "Jordanian"
+                - option "Kazakhstani"
+                - option "Kenyan"
+                - option "Kittian and Nevisian"
+                - option "Kuwaiti"
+                - option "Kyrgyz"
+                - option "Laotian"
+                - option "Latvian"
+                - option "Lebanese"
+                - option "Liberian"
+                - option "Libyan"
+                - option "Liechtensteiner"
+                - option "Lithuanian"
+                - option "Luxembourger"
+                - option "Macedonian"
+                - option "Malagasy"
+                - option "Malawian"
+                - option "Malaysian"
+                - option "Maldivan"
+                - option "Malian"
+                - option "Maltese"
+                - option "Marshallese"
+                - option "Mauritanian"
+                - option "Mauritian"
+                - option "Mexican"
+                - option "Micronesian"
+                - option "Moldovan"
+                - option "Monacan"
+                - option "Mongolian"
+                - option "Moroccan"
+                - option "Mosotho"
+                - option "Motswana"
+                - option "Mozambican"
+                - option "Namibian"
+                - option "Nauruan"
+                - option "Nepalese"
+                - option "New Zealander"
+                - option "Nicaraguan"
+                - option "Nigerian"
+                - option "Nigerien"
+                - option "North Korean"
+                - option "Northern Irish"
+                - option "Norwegian"
+                - option "Omani"
+                - option "Pakistani"
+                - option "Palauan"
+                - option "Panamanian"
+                - option "Papua New Guinean"
+                - option "Paraguayan"
+                - option "Peruvian"
+                - option "Polish"
+                - option "Portuguese"
+                - option "Qatari"
+                - option "Romanian"
+                - option "Russian"
+                - option "Rwandan"
+                - option "Saint Lucian"
+                - option "Salvadoran"
+                - option "Samoan"
+                - option "San Marinese"
+                - option "Sao Tomean"
+                - option "Saudi"
+                - option "Scottish"
+                - option "Senegalese"
+                - option "Serbian"
+                - option "Seychellois"
+                - option "Sierra Leonean"
+                - option "Singaporean"
+                - option "Slovakian"
+                - option "Slovenian"
+                - option "Solomon Islander"
+                - option "Somali"
+                - option "South African"
+                - option "South Korean"
+                - option "Spanish"
+                - option "Sri Lankan"
+                - option "Sudanese"
+                - option "Surinamer"
+                - option "Swazi"
+                - option "Swedish"
+                - option "Swiss"
+                - option "Syrian"
+                - option "Taiwanese"
+                - option "Tajik"
+                - option "Tanzanian"
+                - option "Thai"
+                - option "Togolese"
+                - option "Tongan"
+                - option "Trinidadian or Tobagonian"
+                - option "Tunisian"
+                - option "Turkish"
+                - option "Tuvaluan"
+                - option "Ugandan"
+                - option "Ukrainian"
+                - option "Uruguayan"
+                - option "Uzbekistani"
+                - option "Venezuelan"
+                - option "Vietnamese"
+                - option "Welsh"
+                - option "Yemenite"
+                - option "Zambian"
+                - option "Zimbabwean"
+            - listitem [ref=e288]:
+              - generic [ref=e289]: Date of Birth
+              - textbox "Date of Birth" [disabled] [ref=e290]: yyyy-mm-dd
+            - listitem [ref=e291]:
+              - emphasis [ref=e292]: "*"
+              - text: Required field
+          - paragraph [ref=e293]:
+            - button "Edit" [ref=e294]
+      - generic [ref=e295]:
+        - heading "Attachments" [level=1] [ref=e297]
+        - paragraph [ref=e300]:
+          - button "Add" [ref=e301]
+  - generic [ref=e302]:
+    - text: OrangeHRM 4.10.1
+    - text: © 2005 - 2026
+    - link "OrangeHRM, Inc" [ref=e303] [cursor=pointer]:
+      - /url: http://www.orangehrm.com
+    - text: . All rights reserved.
+```

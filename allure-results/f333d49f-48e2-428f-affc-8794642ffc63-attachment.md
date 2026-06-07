@@ -1,0 +1,363 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Multipledatausingjson.spec.ts >> MultipleData Using Json >> Add Emp with multiple data prince
+- Location: tests\Multipledatausingjson.spec.ts:17:8
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+Expected: Promise {}
+Received: serializes to the same string
+```
+
+```
+Error: ENOENT: no such file or directory, stat 'E:\POM-FrameWorkHRM\Pages\134170270044824419.jpg'
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "OrangeHRM" [ref=e4] [cursor=pointer]:
+        - /url: http://www.orangehrm.com/
+        - img "OrangeHRM" [ref=e5]
+      - link "Welcome Md" [ref=e6] [cursor=pointer]:
+        - /url: "#"
+      - img [ref=e9]
+      - link [ref=e11] [cursor=pointer]:
+        - /url: /symfony/web/index.php/help/help?label=pim_addEmployee
+        - img [ref=e13]
+      - button "Marketplace" [ref=e16]
+      - generic:
+        - generic:
+          - generic "1"
+    - list [ref=e18]:
+      - listitem [ref=e19]:
+        - link "Admin" [ref=e20] [cursor=pointer]:
+          - /url: /symfony/web/index.php/admin/viewAdminModule
+          - generic [ref=e21]: Admin
+        - list [ref=e22]:
+          - listitem [ref=e23]:
+            - link "User Management" [ref=e24] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e25]:
+              - listitem [ref=e26]:
+                - link "Users" [ref=e27] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewSystemUsers
+          - listitem [ref=e28]:
+            - link "Job" [ref=e29] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e30]:
+              - listitem [ref=e31]:
+                - link "Job Titles" [ref=e32] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewJobTitleList
+              - listitem [ref=e33]:
+                - link "Pay Grades" [ref=e34] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewPayGrades
+              - listitem [ref=e35]:
+                - link "Employment Status" [ref=e36] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/employmentStatus
+              - listitem [ref=e37]:
+                - link "Job Categories" [ref=e38] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/jobCategory
+              - listitem [ref=e39]:
+                - link "Work Shifts" [ref=e40] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/workShift
+          - listitem [ref=e41]:
+            - link "Organization" [ref=e42] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e43]:
+              - listitem [ref=e44]:
+                - link "General Information" [ref=e45] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewOrganizationGeneralInformation
+              - listitem [ref=e46]:
+                - link "Locations" [ref=e47] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewLocations
+              - listitem [ref=e48]:
+                - link "Structure" [ref=e49] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewCompanyStructure
+          - listitem [ref=e50]:
+            - link "Qualifications" [ref=e51] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e52]:
+              - listitem [ref=e53]:
+                - link "Skills" [ref=e54] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewSkills
+              - listitem [ref=e55]:
+                - link "Education" [ref=e56] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewEducation
+              - listitem [ref=e57]:
+                - link "Licenses" [ref=e58] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewLicenses
+              - listitem [ref=e59]:
+                - link "Languages" [ref=e60] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewLanguages
+              - listitem [ref=e61]:
+                - link "Memberships" [ref=e62] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/membership
+          - listitem [ref=e63]:
+            - link "Nationalities" [ref=e64] [cursor=pointer]:
+              - /url: /symfony/web/index.php/admin/nationality
+          - listitem [ref=e65]:
+            - link "Corporate Branding" [ref=e66] [cursor=pointer]:
+              - /url: /symfony/web/index.php/admin/addTheme
+          - listitem [ref=e67]:
+            - link "Configuration" [ref=e68] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e69]:
+              - listitem [ref=e70]:
+                - link "Email Configuration" [ref=e71] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/listMailConfiguration
+              - listitem [ref=e72]:
+                - link "Email Subscriptions" [ref=e73] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewEmailNotification
+              - listitem [ref=e74]:
+                - link "Localization" [ref=e75] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/localization
+              - listitem [ref=e76]:
+                - link "Language Packages" [ref=e77] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/languagePackage
+              - listitem [ref=e78]:
+                - link "Modules" [ref=e79] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewModules
+              - listitem [ref=e80]:
+                - link "Social Media Authentication" [ref=e81] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/openIdProvider
+              - listitem [ref=e82]:
+                - link "Register OAuth Client" [ref=e83] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/registerOAuthClient
+      - listitem [ref=e84]:
+        - link "PIM" [ref=e85] [cursor=pointer]:
+          - /url: /symfony/web/index.php/pim/viewPimModule
+          - generic [ref=e86]: PIM
+        - list [ref=e87]:
+          - listitem [ref=e88]:
+            - link "Configuration" [ref=e89] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e90]:
+              - listitem [ref=e91]:
+                - link "Optional Fields" [ref=e92] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/pim/configurePim
+              - listitem [ref=e93]:
+                - link "Custom Fields" [ref=e94] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/pim/listCustomFields
+              - listitem [ref=e95]:
+                - link "Data Import" [ref=e96] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/pimCsvImport
+              - listitem [ref=e97]:
+                - link "Reporting Methods" [ref=e98] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/pim/viewReportingMethods
+              - listitem [ref=e99]:
+                - link "Termination Reasons" [ref=e100] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/pim/viewTerminationReasons
+          - listitem [ref=e101]:
+            - link "Employee List" [ref=e102] [cursor=pointer]:
+              - /url: /symfony/web/index.php/pim/viewEmployeeList/reset/1
+          - listitem [ref=e103]:
+            - link "Add Employee" [ref=e104] [cursor=pointer]:
+              - /url: /symfony/web/index.php/pim/addEmployee
+          - listitem [ref=e105]:
+            - link "Reports" [ref=e106] [cursor=pointer]:
+              - /url: /symfony/web/index.php/core/viewDefinedPredefinedReports/reportGroup/3/reportType/PIM_DEFINED
+      - listitem [ref=e107]:
+        - link "Leave" [ref=e108] [cursor=pointer]:
+          - /url: /symfony/web/index.php/leave/viewLeaveModule
+          - generic [ref=e109]: Leave
+        - list [ref=e110]:
+          - listitem
+      - listitem [ref=e111]:
+        - link "Time" [ref=e112] [cursor=pointer]:
+          - /url: /symfony/web/index.php/time/viewTimeModule
+          - generic [ref=e113]: Time
+        - list [ref=e114]:
+          - listitem [ref=e115]:
+            - link "Timesheets" [ref=e116] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e117]:
+              - listitem [ref=e118]:
+                - link "My Timesheets" [ref=e119] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/time/viewMyTimesheet
+              - listitem [ref=e120]:
+                - link "Employee Timesheets" [ref=e121] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/time/viewEmployeeTimesheet
+          - listitem [ref=e122]:
+            - link "Attendance" [ref=e123] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e124]:
+              - listitem [ref=e125]:
+                - link "My Records" [ref=e126] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/attendance/viewMyAttendanceRecord
+              - listitem [ref=e127]:
+                - link "Punch In/Out" [ref=e128] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/attendance/punchIn
+              - listitem [ref=e129]:
+                - link "Employee Records" [ref=e130] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/attendance/viewAttendanceRecord
+              - listitem [ref=e131]:
+                - link "Configuration" [ref=e132] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/attendance/configure
+          - listitem [ref=e133]:
+            - link "Reports" [ref=e134] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e135]:
+              - listitem [ref=e136]:
+                - link "Project Reports" [ref=e137] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/time/displayProjectReportCriteria?reportId=1
+              - listitem [ref=e138]:
+                - link "Employee Reports" [ref=e139] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/time/displayEmployeeReportCriteria?reportId=2
+              - listitem [ref=e140]:
+                - link "Attendance Summary" [ref=e141] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/time/displayAttendanceSummaryReportCriteria?reportId=4
+          - listitem [ref=e142]:
+            - link "Project Info" [ref=e143] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e144]:
+              - listitem [ref=e145]:
+                - link "Customers" [ref=e146] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewCustomers
+              - listitem [ref=e147]:
+                - link "Projects" [ref=e148] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/admin/viewProjects
+      - listitem [ref=e149]:
+        - link "Recruitment" [ref=e150] [cursor=pointer]:
+          - /url: /symfony/web/index.php/recruitment/viewRecruitmentModule
+          - generic [ref=e151]: Recruitment
+        - list [ref=e152]:
+          - listitem [ref=e153]:
+            - link "Candidates" [ref=e154] [cursor=pointer]:
+              - /url: /symfony/web/index.php/recruitment/viewCandidates
+          - listitem [ref=e155]:
+            - link "Vacancies" [ref=e156] [cursor=pointer]:
+              - /url: /symfony/web/index.php/recruitment/viewJobVacancy
+      - listitem [ref=e157]:
+        - link "My Info" [ref=e158] [cursor=pointer]:
+          - /url: /symfony/web/index.php/pim/viewMyDetails
+          - generic [ref=e159]: My Info
+        - list [ref=e160]:
+          - listitem
+      - listitem [ref=e161]:
+        - link "Performance" [ref=e162] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e163]: Performance
+        - list [ref=e164]:
+          - listitem [ref=e165]:
+            - link "Configure" [ref=e166] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e167]:
+              - listitem [ref=e168]:
+                - link "KPIs" [ref=e169] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/performance/searchKpi
+              - listitem [ref=e170]:
+                - link "Trackers" [ref=e171] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/performance/addPerformanceTracker
+          - listitem [ref=e172]:
+            - link "Manage Reviews" [ref=e173] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e174]:
+              - listitem [ref=e175]:
+                - link "Manage Reviews" [ref=e176] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/performance/searchPerformancReview
+              - listitem [ref=e177]:
+                - link "My Reviews" [ref=e178] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/performance/myPerformanceReview
+              - listitem [ref=e179]:
+                - link "Review List" [ref=e180] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/performance/searchEvaluatePerformancReview
+          - listitem [ref=e181]:
+            - link "My Trackers" [ref=e182] [cursor=pointer]:
+              - /url: /symfony/web/index.php/performance/viewMyPerformanceTrackerList
+          - listitem [ref=e183]:
+            - link "Employee Trackers" [ref=e184] [cursor=pointer]:
+              - /url: /symfony/web/index.php/performance/viewEmployeePerformanceTrackerList
+      - listitem [ref=e185]:
+        - link "Dashboard" [ref=e186] [cursor=pointer]:
+          - /url: /symfony/web/index.php/dashboard
+          - generic [ref=e187]: Dashboard
+        - list [ref=e188]:
+          - listitem
+      - listitem [ref=e189]:
+        - link "Directory" [ref=e190] [cursor=pointer]:
+          - /url: /symfony/web/index.php/directory/viewDirectory/reset/1
+          - generic [ref=e191]: Directory
+        - list [ref=e192]:
+          - listitem
+      - listitem [ref=e193]:
+        - link "Maintenance" [ref=e194] [cursor=pointer]:
+          - /url: /symfony/web/index.php/maintenance/purgeEmployee
+          - generic [ref=e195]: Maintenance
+        - list [ref=e196]:
+          - listitem [ref=e197]:
+            - link "Purge Records" [ref=e198] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e199]:
+              - listitem [ref=e200]:
+                - link "Employee Records" [ref=e201] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/maintenance/purgeEmployee
+              - listitem [ref=e202]:
+                - link "Candidate Records" [ref=e203] [cursor=pointer]:
+                  - /url: /symfony/web/index.php/maintenance/purgeCandidateData
+          - listitem [ref=e204]:
+            - link "Access Records" [ref=e205] [cursor=pointer]:
+              - /url: /symfony/web/index.php/maintenance/accessEmployeeData
+      - listitem [ref=e206]:
+        - link "Buzz" [ref=e207] [cursor=pointer]:
+          - /url: /symfony/web/index.php/buzz/viewBuzz
+          - generic [ref=e208]: Buzz
+        - list [ref=e209]:
+          - listitem
+    - generic [ref=e211]:
+      - heading "Add Employee" [level=1] [ref=e213]
+      - group [ref=e216]:
+        - list [ref=e217]:
+          - listitem [ref=e218]:
+            - generic [ref=e219]: Full Name
+            - list [ref=e220]:
+              - listitem [ref=e221]:
+                - generic [ref=e222]:
+                  - emphasis [ref=e223]: "*"
+                  - text: First Name
+                - textbox [active] [ref=e224]
+                - generic [ref=e225]: Required
+              - listitem [ref=e226]:
+                - generic [ref=e227]: Middle Name
+                - textbox [ref=e228]
+              - listitem [ref=e229]:
+                - generic [ref=e230]:
+                  - emphasis [ref=e231]: "*"
+                  - text: Last Name
+                - textbox [ref=e232]: princerajak
+          - listitem [ref=e233]:
+            - generic [ref=e234]: Employee Id
+            - textbox "Employee Id" [ref=e235]: "0831"
+          - listitem [ref=e236]:
+            - generic [ref=e237]: Photograph
+            - button "Photograph" [ref=e238]
+            - generic [ref=e239]: "Accepts jpg, .png, .gif up to 1MB. Recommended dimensions: 200px X 200px"
+          - listitem [ref=e240]:
+            - generic [ref=e241]: Create Login Details
+            - checkbox "Create Login Details" [ref=e242]
+          - listitem [ref=e243]:
+            - emphasis [ref=e244]: "*"
+            - text: Required field
+        - paragraph [ref=e245]:
+          - button "Save" [ref=e246]
+  - generic [ref=e247]:
+    - text: OrangeHRM 4.10.1
+    - text: © 2005 - 2026
+    - link "OrangeHRM, Inc" [ref=e248] [cursor=pointer]:
+      - /url: http://www.orangehrm.com
+    - text: . All rights reserved.
+```

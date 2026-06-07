@@ -1,0 +1,28 @@
+import { AdminLoginPage } from "../Pages/Adminloginpage";
+import { AddEmp } from "../Pages/AddEmp";
+import { AdminLogoutPage } from "../Pages/Adminlogoutpage";
+import test from "@playwright/test";
+test.describe("HRM Employee Managemen",()=>{
+    let login: AdminLoginPage
+    let emp : AddEmp
+    let logout :AdminLogoutPage
+    test.beforeEach(async({page})=>{
+        login = new AdminLoginPage(page)
+       await login.launchUrl(process.env.BASE_URL!)
+       await login.HRMLogin(process.env.BASE_USER!,process.env.BASE_PASS!)
+
+    })
+    test('Add Employee',async({page})=>{
+        emp = new AddEmp(page)
+        await emp.HRM_Emp('Akhilesh','Testing','Ranga67')
+    })
+    test.afterEach(async({page})=>{
+        logout = new AdminLogoutPage(page)
+      await  logout.HRmLogout()
+     await   page.close()
+
+    })
+})
+
+
+
